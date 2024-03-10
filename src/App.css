@@ -1,38 +1,464 @@
-.App {
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+}
+
+
+/* ===============INDEX PAGE STYLING ================= */
+
+.netflix-clone{
+  margin: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.hero-page{
+  /* padding: 40px 180px; */
+  background: url("../src/Components/Assets/netflix\ bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 39rem;
+  position: relative;
+}
+.hero-page .bg-overlay{
+  background: rgba(0, 0, 0, 0.745);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hero-page .neflix-sign{
+  padding: 1px 10%;
+  z-index: 999;
+  position: relative;
+  display: flex;
+  /* flex-shrink:inherit; */
+  flex-direction: row;
+}
+
+.neflix-sign .sign-in{
+  margin-top: 25px;
+  right: 10%;
+  position: absolute;
+  background: red;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.neflix-sign .sign-in button{
+  background: red;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hero-page .hero-text{
+  position: relative;
+  color: white;
+  z-index: 999;
   text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 55%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-text .hero1 h1{
+  font-weight: 800;
+  font-size: 53px;
+  text-align: center;
+  align-items: center;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.hero-text .hero1 p{
+  margin-top: -30px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.hero-text .get-stated{
+  position: relative;
+  width: 75%;
+  margin: auto;
+  padding-top: 18px;
+}
+
+.get-stated-email-btn{
+  box-sizing: border-box;
+}
+
+.get-stated-email-btn form{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 35px;
+}
+
+form .input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  background: none;
+  /* background: rgba(93, 97, 121, 0.604); */
+  color: white;
+  border: .1px solid rgb(168, 165, 165);
+  border-radius: 6px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+form .btn{
+  background: red;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.netflix-body-img{
+  border-top: 3px solid red;
+  background-color: black;
+  height: 8rem;
+  width: 100%;
+  border-radius: 100%;
+  position: relative;
+  margin-top: -55px;
+}
+
+.blue-cl{
+  background: radial-gradient(rgb(7, 15, 65),rgb(8, 8, 57), rgb(7, 7, 51), rgb(9, 9, 42), rgb(3, 3, 18), rgb(1, 1, 6), rgb(0, 0, 0));
+  height: 5rem;
+  width: 50%;
+  margin: auto;
+  margin-top: -2px;
+  border-radius: 100%;
+  /* border: 1px solid yellow; */
+  position: relative;
+}
+
+
+.netflix-body{
+  background: black;
+  color: white;
+  padding: 80px 10%;
+  position: relative;
+  margin-top: -20px;
+}
+
+.netflix-body .netflix-plan{
+  width: 100%;
+  height: 9rem;
+  border:none;
+  box-sizing:border-box;
+  display:block;
+  border-radius:15px;
+  background: linear-gradient(80deg, rgb(63, 1, 37), rgb(63, 1, 37), rgb(28, 2, 17), rgb(28, 2, 17), rgb(32, 2, 32)) ;
+  padding:10px 0px 10px 85px ;
+}
+
+.netflix-plan:hover{
+  transition: all ease-in-out;
+  transform: scale(102%);
+  transition-duration: 0.2s;
+  background: linear-gradient(80deg, rgb(63, 1, 37), rgb(63, 1, 37), rgb(63, 1, 37), rgb(28, 2, 17), rgb(28, 2, 17)) ;
+}
+
+.netflix-body .netflix-plan h1{
+  text-wrap: wrap;
+}
+.netflix-plan p{
+  margin-top: -15px;
+  font-size: 19px;
+  font-weight: 500;
+  color: gray;
+}
+
+
+.reason-to-join{
+  margin-top: 60px;
+}
+
+.sub-title{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.reason-to-join .reason-cards{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.reason-cards .card{
+  height: 23rem;
+  width: 13rem;
+  padding: 0 12px;
+  background: linear-gradient(to right bottom, rgb(4, 4, 39), rgb(4, 4, 39), rgba(68, 3, 12, 0.458));
+  border: none;
+  border-radius: 10px;
+  position: relative;
+}
+.reason-cards .card h3{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.card p{
+  color: gray;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.card .card-img{
+  display: grid;
+  position: sticky;
+  box-sizing: border-box;
+  /* margin-left: 100%; */
+  float: inline-end;
+  background: darkred;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.faq{
+    margin-top: 60px;
+}
+
+.faq .faq-button{
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.faq-buttons .faq-button button{
+  background-color: rgba(72, 72, 72, 0.514);
+  height: 82px;
+  width: 79%;
+  border: none;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all ease-in-out;
+  transition-duration: 4ms;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.faq-button button:hover{
+  transition: all ease-in-out;
+  transition-duration: 4ms;
+  background: rgb(60, 59, 59);
+}
+button p{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+button .i{
+  font-size: 30px;
+  margin-top: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.btn-text{
+  background-color: rgba(72, 72, 72, 0.514);
+  margin: -6px 0 10px 0;
+  width: 75%;
+  position: relative;
+  font-weight: 400;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.footer{
+  background: black;
+  padding: 0px 10%;
+  box-sizing: border-box;
+  margin: auto;
+  display: block;
+  position: relative;
+  margin-top: -10px;
+}
+
+.footer .email-get-started{
+  color: white;
+  box-sizing: border-box;
+}
+.email-get-started p{
+  font-size: 18px;
+}
+
+.email-get-started form{
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  gap: -13px;
+  /* margin: auto; */
+  margin-bottom: 30px;
+}
+
+.email-get-started form .input{
+  height: 50px;
+  width: 47rem;
+  border: .2px solid gray;
+}
+
+.email-get-started .btn{
+  background: rgb(120, 5, 5)(219, 6, 6);
+  width: 13rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-links{
+  margin: auto;
+  padding: 0 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a{
+  color: rgb(189, 187, 187);
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer-links .footer-link-grids{
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  color: rgb(189, 187, 187);
+}
+
+.footer-link-grids .grid-link{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 15px;
+}
+
+.lang{ 
+  background: none;
+  padding: 7px 10px;
+  border: 1px solid grey;
+  color: white;
+  width: 90px;
+  display: flex;
+  border-radius: 8px;
+  margin: 60px 0 40px 0;
+}
+
+.lang select{
+  background: none;
+  border: none;
+  color: aliceblue;
+  outline: none;
+  font-weight: bold;
+}
+
+.ngn{
+  color: rgb(168, 165, 165);
+  margin-bottom: 100px;
+}
+
+/* =============INDEX PAGE STYLING ENDS======== */
+
+
+
+
+/* =============== RESPONSIVE FOR INDEX PAGE ================== */
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: yellow;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+.hero-page .hero-text{
+  position: relative;
+  color: white;
+  z-index: 999;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.hero-text .hero1 h1{
+  font-weight: 700;
+  font-size: 37px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.hero-text .hero1 p{
+  margin-top: -30px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+.hero-text .get-stated{
+  position: relative;
+  width: 75%;
+  margin: auto;
+  padding-top: 18px;
+}
+
+.get-stated-email-btn{
+  box-sizing: border-box;
+}
+
+.get-stated-email-btn form{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 35px;
+}
+
+form .input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  background: none;
+  /* background: rgba(93, 97, 121, 0.604); */
+  color: white;
+  border: .1px solid rgb(168, 165, 165);
+  border-radius: 6px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+form .btn{
+  background: red;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 }
