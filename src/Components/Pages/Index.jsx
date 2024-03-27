@@ -1,10 +1,10 @@
-import {React, useState} from 'react';
-import netflixIcon from "../Assets/netflixIcon.png";
+import {React} from 'react';
+// import netflixIcon from "../Assets/netflixIcon.png";
 import netflixLogo from '../Assets/netflixLogo.png';
-import netflixBg from "../Assets/netflix bg.jpeg";
-import baby from "../Assets/baby.png";
-import tv from "../Assets/tv.png";
-import {FaPlus, FaTimes} from 'react-icons/fa';
+// import netflixBg from "../Assets/netflix bg.jpeg";
+// import baby from "../Assets/baby.png";
+// import tv from "../Assets/tv.png";
+// import {FaPlus, FaTimes} from 'react-icons/fa';
 import { Faq } from './faq';
 
 
@@ -57,7 +57,7 @@ export const Index = () => {
             <div className="reason-to-join">
                 <h4 className='sub-title'>More Reasons to Join</h4>
                 <div className="reason-cards">
-                    
+                     
                     <div className="card">
                         <h3>Enjoy on your TV</h3>
                         <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>

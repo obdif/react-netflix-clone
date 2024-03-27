@@ -325,6 +325,7 @@ button .i{
   height: 50px;
   width: 47rem;
   border: .2px solid gray;
+  box-sizing: border-box;
 }
 
 .email-get-started .btn{
@@ -389,32 +390,40 @@ a{
 
 /* =============== RESPONSIVE FOR INDEX PAGE ================== */
 @media only screen and (max-width: 1200px) {
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
   
+  .hero-page{
+
+    height: 45rem;
+    position: relative;
+  }
 .hero-page .hero-text{
   position: relative;
   color: white;
   z-index: 999;
   text-align: center;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   box-sizing: border-box;
-  width: 45%;
+  
 }
 
 .hero-text .hero1 h1{
   font-weight: 700;
   font-size: 37px;
   text-align: center;
+  margin: auto;
+  box-sizing: border-box;
   align-items: center;
   position: relative;
+  width: 63%;
 }
 
 
 .hero-text .hero1 p{
-  margin-top: -30px;
+  margin-top: 0;
   font-weight: 400;
   font-size: 15px;
 }
@@ -422,9 +431,9 @@ a{
 
 .hero-text .get-stated{
   position: relative;
-  width: 75%;
+  width: 85%;
   margin: auto;
-  padding-top: 18px;
+  padding-top: 5px;
 }
 
 .get-stated-email-btn{
@@ -442,9 +451,9 @@ form .input{
   width: 100%;
   outline: none;
   background: none;
-  /* background: rgba(93, 97, 121, 0.604); */
+  background: rgba(93, 97, 121, 0.604);
   color: white;
-  border: .1px solid rgb(168, 165, 165);
+  border: .1px solid rgb(116, 114, 114);
   border-radius: 6px;
   font-size: 20px;
   padding-left: 20px;
@@ -453,12 +462,570 @@ form .input{
 form .btn{
   background: red;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   border: none;
   outline: none;
   border-radius: 5px;
   cursor: pointer;
 }
+
+.netflix-body .netflix-plan{
+  width: 100%;
+  height: 9rem;
+  margin-top: -50px;
+  border:none;
+  box-sizing:border-box;
+  display:block;
+  border-radius:15px;
+  background: linear-gradient(80deg, rgb(63, 1, 37), rgb(63, 1, 37), rgb(28, 2, 17), rgb(28, 2, 17), rgb(32, 2, 32)) ;
+  padding:10px 0px 10px 85px ;
+}
+
+.hero-page .neflix-sign{
+  padding: 1px 7.5%;
+  z-index: 999;
+}
+
+.netflix-body{
+  padding: 80px 7.5%;
+}
+
+.sub-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reason-to-join .reason-cards{
+  display: grid;
+  grid-template-columns:auto auto;
+  gap: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.reason-cards .card{
+  height: 12rem;
+  width: 29rem;
+  padding: 0 12px;
+  background: linear-gradient(to right bottom, rgb(4, 4, 39), rgb(4, 4, 39), rgba(68, 3, 12, 0.458));
+  border: none;
+  border-radius: 20px;
+  position: relative;
+}
+
+.footer{
+  background: black;
+  padding: 0px 8%;
+  box-sizing: border-box;
+  margin: auto;
+  display: block;
+  position: relative;
+  margin-top: -10px;
+}
+
+.email-get-started form{
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  gap: -13px;
+  /* margin: auto; */
+  margin-bottom: 30px;
+}
+
+.email-get-started form .input{
+  height: 50px;
+  width: 39rem;
+  border: .2px solid gray;
+  box-sizing: border-box;
+}
+
+.email-get-started .btn{
+  background: rgb(120, 5, 5)(219, 6, 6);
+  width: 9rem;
+  color: white;
+
+}
+
+}
+
+@media only screen and (max-width: 1100px) {
+  .reason-cards .card{
+    height: 12rem;
+    width: 27rem;
+    padding: 0 12px;
+    background: linear-gradient(to right bottom, rgb(4, 4, 39), rgb(4, 4, 39), rgba(68, 3, 12, 0.458));
+    border: none;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1000px) {
+  /* body {
+    background-color: red;
+  } */
+
+  .reason-cards .card{
+    height: 14rem;
+    width: 24rem;
+    padding: 0 12px;
+    background: linear-gradient(to right bottom, rgb(4, 4, 39), rgb(4, 4, 39), rgba(68, 3, 12, 0.458));
+    border: none;
+    border-radius: 10px;
+    position: relative;
+  }
+
+
+  .hero-page .hero-text{
+    position: relative;
+    color: white;
+    z-index: 999;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    width: 65%;
+  }
+
+  .hero-text .hero1 h1{
+    font-weight: 700;
+    font-size: 37px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    width: 65%;
+  }
+
+  .btn-text{
+    background-color: rgba(72, 72, 72, 0.514);
+    margin: -6px 0 10px 0;
+    width: 74.1%;
+    position: relative;
+    font-weight: 400;
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  .footer{
+    background: black;
+    padding: 0px 7%;
+    box-sizing: border-box;
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-top: -10px;
+  }
+  
+
+  .email-get-started p{
+    font-size: 16px;
+  }
+  
+  
+  .email-get-started form{
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    gap: 5px;
+    /* margin: auto; */
+    margin-bottom: 20px;
+  }
+
+.email-get-started form .input{
+  height: 50px;
+  width: 37rem;
+  border: .2px solid gray;
+}
+
+.email-get-started .btn{
+  background: rgb(120, 5, 5)(219, 6, 6);
+  width: 9rem;
+  color: white;
+}
+
+.footer-links{
+  margin: auto;
+  padding: 0 35px;
+}
+
+a{
+  color: rgb(189, 187, 187);
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.footer-links .footer-link-grids{
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: rgb(189, 187, 187);
+}
+
+.footer-link-grids .grid-link{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 11px;
+}
+
+.lang{ 
+  background: none;
+  padding: 7px 10px;
+  border: 1px solid grey;
+  color: white;
+  width: 90px;
+  display: flex;
+  border-radius: 8px;
+  margin: 60px 0 40px 0;
+}
+
+.lang select{
+  background: none;
+  border: none;
+  color: aliceblue;
+  outline: none;
+  font-weight: bold;
+}
+
+.ngn{
+  color: rgb(168, 165, 165);
+  margin-bottom: 100px;
+}
+ 
+}
+
+@media only screen and (max-width: 900px){
+  /* body{
+    background: green;
+  } */
+ 
+  .hero-page{
+    background-size: cover;
+    height: 37rem;
+    position: relative;
+  }
+  .hero-page .neflix-sign{
+    padding: 1px 2%;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .neflix-sign .sign-in{
+    margin-top: 25px;
+    right: 4%;
+    position: absolute;
+    background: red;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+ .netflix-logo img{
+  width: 130px;
+ }
+  
+ 
+  .hero-page .hero-text{
+    position: relative;
+    color: white;
+    z-index: 999;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    width: 75%;
+  }
+
+  .hero-text .hero1 h1{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    width: 65%;
+  }
+
+  .netflix-body{
+    background: black;
+    color: white;
+    padding: 80px 4%;
+    position: relative;
+    margin-top: -20px;
+  }
+
+  .reason-to-join .reason-cards{
+    display: grid;
+    grid-template-columns:auto;
+
+  }
+  
+  .reason-cards .card{
+    height: 11rem;
+    width: 98%;
+
+  }
+  .reason-cards .card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -5px;
+  }
+
+  .faq-buttons .faq-button button{
+    width: 100%;
+  }
+
+  .btn-text{
+    padding: 0 4%;
+    width: 92%;
+  }
+ 
+  .footer-links .footer-link-grids{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: auto  auto;
+    color: rgb(189, 187, 187);
+  }
+  
+  .footer-link-grids .grid-link{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 11px;
+    margin-bottom: 10px;
+  }
+  .footer{
+    background: black;
+    padding: 0px 4%;
+    margin-top: -10px;
+  }
+
+  .email-get-started form .input{
+    height: 50px;
+    width: 35rem;
+    border: .2px solid gray;
+  }
+  
+  .email-get-started .btn{
+    background: rgb(120, 5, 5)(219, 6, 6);
+    width: 9rem;
+    color: white;
+  }
+  
+}
+
+@media only screen and (max-width: 800px){
+  /* body{
+    background: orangered;
+  } */
+  .netflix-body .netflix-plan{
+    width: 100%;
+    height: 12rem;
+    padding:10px 0px 10px 55px ;
+  }
+  .netflix-body .netflix-plan h1{
+    text-wrap: wrap;
+    width: 80%;
+  }
+  .netflix-plan p{
+    margin-top: -15px;
+    font-size: 19px;
+    font-weight: 500;
+    color: gray;
+  }
+  
+ 
+  .reason-cards .card{
+    height: 11rem;
+    width: 97%;
+
+  }
+  .reason-cards .card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -5px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 700px){
+  /* body{
+    background: burlywood;
+  } */
+
+   
+  .hero-page .hero-text{
+    position: relative;
+    color: white;
+    z-index: 999;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    width: 85%;
+  }
+
+  .hero-text .hero1 h1{
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    width: 65%;
+  }
+
+
+  .email-get-started form .input{
+    height: 50px;
+    width: 26rem;
+    border: .2px solid gray;
+  }
+  
+  .email-get-started .btn{
+    background: rgb(120, 5, 5)(219, 6, 6);
+    width: 9rem;
+    color: white;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  /* body{
+    background: purple;
+  } */
+
+   
+  .hero-page .hero-text{
+    position: relative;
+    color: white;
+    z-index: 999;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .hero-text .hero1 h1{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    width: 85%;
+  }
+
+  .get-stated-email-btn form{
+    display: block;
+    grid-template-columns:  auto;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  form .input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    background: none;
+    /* background: rgba(93, 97, 121, 0.604); */
+    color: white;
+    border: .1px solid rgb(168, 165, 165);
+    border-radius: 6px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+  
+  form .btn{
+    font-size: 20px;
+    font-weight: 500;
+    width: 10rem;
+    height: 60px;
+  }
+
+  .netflix-body .netflix-plan{
+    width: 100%;
+    height: 8.5rem;
+    border:none;
+    box-sizing:border-box;
+    display:block;
+    border-radius:15px;
+    background: linear-gradient(80deg, rgb(63, 1, 37), rgb(63, 1, 37), rgb(28, 2, 17), rgb(28, 2, 17), rgb(32, 2, 32)) ;
+    padding:10px ;
+  }
+  
+
+  .netflix-body .netflix-plan h1{
+    /* text-wrap: wrap; */
+    font-size: 23px;
+    width: 100%;
+  }
+
+  .reason-cards .card{
+    height: 11rem;
+    width: 96%;
+
+  }
+  .reason-cards .card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -5px;
+  }
+
+
+  
+.faq-buttons .faq-button button p,path{
+  font-size: 18px;
+}
+.btn-text{
+  font-size: 19px;
+  padding: 20px;
+}
+
+.email-get-started p{
+  font-size: 17px;
+}
+
+
+.email-get-started form{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.email-get-started form .input{
+  height: 50px;
+  width: 100%;
+  border: .2px solid gray;
+}
+
+.email-get-started .btn{
+  margin-top: -25px;
+  height: 45px;
+}
+
+
+.footer-links .footer-link-grids{
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns:  auto;
+  color: rgb(189, 187, 187);
+}
+
 
 }
