@@ -1,26 +1,26 @@
-import {React, useState} from 'react';
+import {React} from 'react';
 import {FaPlus, FaTimes} from 'react-icons/fa';
 
-export const FaqExpand = ({defaultText, expandedText}) => {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const toggleExpanded = () =>{
-        setIsExpanded(!isExpanded);
-    };
+export const FaqExpand = ({defaultText, expandedText, isOpen, onClick}) => {
+    // const [isExpanded, setIsExpanded] = useState(false);
+    // const toggleExpanded = () =>{
+    //     setIsExpanded(!isExpanded);
+    // };
 
     return(
                     
         
         <div className="faq-buttons">
             <div className="faq-button">
-                <button onClick={toggleExpanded}>
+                <button onClick={onClick}>
                     <p>{defaultText}</p>
 
                     <i className='i'>
-                        {isExpanded ? <FaTimes/> : <FaPlus/> }
+                        {isOpen ? <FaTimes/> : <FaPlus/> }
                         {/* {isExpanded ? expandedText : defaultText} */}
                     </i>
                 </button>
-                {isExpanded && (
+                {isOpen && (
                     <div className="btn-text">
                         {expandedText}
                     </div>
