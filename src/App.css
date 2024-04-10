@@ -17,6 +17,13 @@ body {
   box-sizing: border-box;
 }
 
+.error{
+  color: red;
+  padding: 10px;
+  position: relative;
+  margin-top: -5px;
+  left: -200px;
+}
 .hero-page{
   /* padding: 40px 180px; */
   background: url("../src/Components/Assets/netflix\ bg.jpeg");

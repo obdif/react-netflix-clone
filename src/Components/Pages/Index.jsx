@@ -1,4 +1,7 @@
 import {React} from 'react';
+import {useForm} from 'react-hook-form';
+import {ToastContainer, toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 // import netflixIcon from "../Assets/netflixIcon.png";
 import netflixLogo from '../Assets/netflixLogo.png';
 // import netflixBg from "../Assets/netflix bg.jpeg";
@@ -11,6 +14,31 @@ import { Faq } from './faq';
 
 export const Index = () => {
 
+    const { register, handleSubmit, formState:{errors, isValid}, reset  } = useForm ();
+    const onSubmit = data =>{
+        if (!isValid){
+        return;
+        }
+        console.log(data);
+        reset();
+        notify();
+    };
+
+    const notify = () => {
+        toast.success('Successfully Registered', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          // transition: Bounce,
+          });
+      };
+    
+
   return (
     <div className="netflix-clone"> 
         {/* ===================== HERO PAGE ======================= */}
@@ -18,7 +46,7 @@ export const Index = () => {
             <div className="bg-overlay"></div>
             <div className="neflix-sign">
                 <div className="netflix-logo">
-                    <img src={netflixLogo} alt="" srcset="" width={200}/>
+                    <img src={netflixLogo} alt="" srcSet="" width={200}/>
                 </div>
                 <div className="sign-in">
                     <button>Sign In</button>
@@ -34,10 +62,20 @@ export const Index = () => {
                 <div className="get-stated">
                     <p>Ready to watch? Enter your email to create or restart your membership.</p>
                     <div className="get-stated-email-btn">
-                        <form action="">
-                            <input className='input' placeholder='Email Address' required type="email" name="" id="" />
+                        <form  onSubmit={handleSubmit(onSubmit)}>
+                            <input className='input'
+                             placeholder='Email Address'
+                             id='email' 
+                             type="email"
+                            {...register("email",{
+                                required:true,
+                            })} 
+                          />
                             <input className='btn' type="submit" value="Get Started &nbsp; >" />
                         </form>
+                        <ToastContainer/>
+                        {errors.email && <p className='error'> Email is required. </p>}
+
                     </div>
                 </div>
             </div>
