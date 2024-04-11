@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -1064,6 +1066,22 @@ a{
     padding: 10px;
     position: relative;
     margin-top: -95px;
-    left: -140px;
+    left: -120px;
   }
+
+  
+  form .input{
+    height: 50px;
+    width: 90%;
+    outline: none;
+    background: none;
+
+  }
+
+  .btn-text{
+    font-size: 19px;
+    padding: 16.5px;
+  }
+  
+
 }
