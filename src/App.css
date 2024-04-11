@@ -1085,3 +1085,30 @@ a{
   
 
 }
+
+
+@media screen and (max-width:400px){
+  .error{
+    color: red;
+    padding: 10px;
+    position: relative;
+    margin-top: -95px;
+    left: -110px;
+  }
+
+  
+  form .input{
+    height: 50px;
+    width: 90%;
+    outline: none;
+    background: none;
+
+  }
+
+  .btn-text{
+    font-size: 19px;
+    padding: 15px;
+  }
+  
+
+}
